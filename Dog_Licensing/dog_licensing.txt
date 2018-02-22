@@ -1,0 +1,60 @@
+Dog Licensing: providing a means for applicants of a certain municipality to register their dogs online via a public form page.
+
+Prompt: "You’ve been asked by your client, a municipality, to put their dog license application form online. What questions do you ask?"
+
+Response: Below is a troubleshooting tree to handle all expected scenarios that I've come across.
+
+  1) On the Application Form:
+
+    1a) List all of the text-like input fields that need to be recorded. Example: The dog's Date of Birth, the dog's name, the dog's breed, etc.
+    1b) List all of the documents that need to be submitted. Example: The dog's Health Papers, The dog's Pedigree, etc.
+      1b1) Can these forms be scanned/photographed and then subsequently uploaded?
+      1b2) Alternatively, can these forms be identified by a serial number and subsequently mailed in for physical inspection?
+      1b3) Can these forms ONLY be mailed in?
+    1c) Do forms/agreements need to be downloaded?
+      1c1) Do they need to be mailed back with a signature?
+      1c2) Can they be uploaded with a signature?
+    1d) Are signatures needed?
+      1d1) Can they be digital?
+        1d1a) Last 5 of SSN in a (hidden) text-like input?
+        1d1b) A "cursive" mouse/stylus image-like input?
+        1d1c) An agreement tied to a captcha?
+      1d2) Must the signature be physical?
+        1d2a) Is this signature covered in 1c)?
+    1e) Are images needed?
+      1e1) Are regulated or orthogonal angles of the dog needed for bureaucratic identification? (alluding to multiple-image upload)
+    1f) Are FEES required?
+      1f1) Are these fees paid separately?
+        1f1a) Are they paid by mail money order/check?
+        1f1b) Are they paid earlier/later on at a register?
+        1f1c) Will the Municipal Board allow secure Credit Card/Debit Card transactions online with a trusted vendor (PayPal, Stripe, etc.)?
+
+2) On the Application Page:
+  
+  2a) Is the application form standalone?
+    2a1) Is this just a single-page application?
+  2b) Is the application a part of a greater document tree (website) pertaining to other Dog Affairs (https://www.townsvilledepartmentofdogs.us/dogregistration)?
+    2b1) Are there linking, relevant/pertinent resources (other pages, downloadable documents, contact methods) that should be put onto the page with the form?
+  2c) What styling is envisioned, if any?
+    2c1) Is there a pre-selected mock-up? CSS/Less/Sass Theme? Wordpress/Drupal Theme?
+    2c2) Is there code IN PLACE that can be applied to the form page?
+    2c3) Would the Municipal Board be content with basic styling (in the style and spirit of a desktop application)?
+
+3) On the Administration/Deployment of the Page:
+
+  3a) Are you hosted already?
+    3a1) Do you own physical servers?
+      3a1a) What is the network configuration of these servers?
+        3a1a1) Can they be publicly accessed with a password?
+        3a1a2) Can they be accessed over VPN with a password?
+    3a2) Do you rent rackspace/servers elsewhere?
+    3a3) Do you use virtual or cloud hosting (Such as through HostGator, Amazon Web Services, IBM)?
+      3a3a) Do you have credentials prepared for me to login and deploy?
+      3a3b) Must I contact a Webmaster or Administrator for these credentials?
+  3b) Do you require hosting?
+    3b1) What approximate traffic is expected to reach the site?
+    3b2) Since the online submission only concerns consituents of the municipality, should the zoning of the website just concentrate its resources there?
+      3b2a) Have you considered the relatively low cost of boosting the site's availability/searchability/indexability?
+    3b3) Can we talk about security considerations?
+      3b3a) HTTPS Strict Transport Policy with a certificate, strong AES-256 encryption, heavy keys, to ensure the End-User/Application that they are relatively safe?
+      3b3b) Subnet Configuration, Firewalls and avoiding DDOS attacks, Man-in-the-Middle Attacks, Impersonation Attacks, etc.
